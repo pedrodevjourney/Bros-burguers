@@ -25,31 +25,49 @@
       referrerpolicy="no-referrer"
     />
 
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Juicy Burguer - O hamburguer mais suculento da região!"
+    />
+    <meta
+      property="og:image"
+      content="https://juicy-burguers.vercel.app/assets/logo-image.jpeg"
+    />
+    <meta property="og:description" content="O melhor hamburguer caseiro!" />
+    <meta property="og:site_name" content="JuicyBurguer's" />
+
     <link rel="stylesheet" href="./styles/output.css" />
 
-    <title>Juicy Burguer's - O hamburguer mais suculento da região</title>
+    <title>Bros Burguer's - O hamburguer mais suculento da região</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
       <div class="w-full h-full flex flex-col justify-center items-center">
         <img
-          src="./assets/logo-image.jpeg"
+          src="./assets/logo.jpeg"
           alt="Logo BurguerHaven"
           class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
         />
-        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Juicy Burguer's</h1>
+        <h1
+          class="text-4xl mt-4 mb-2 font-bold text-white hover:text-red-600 cursor-default"
+        >
+          Bros Burguer's
+        </h1>
 
-        <span class="text-white font-medium">Rua dev 10, Samonte - MG</span>
+        <span class="text-black font-medium">Rua dev 10, Samonte - MG</span>
 
         <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-          <span class="text-white font-medium">Seg à dom - 18:00 às 22:00</span>
+          <span class="text-black font-medium">Seg à dom - 18:00 às 22:00</span>
         </div>
       </div>
     </header>
     <!-- FIM DO HEADER -->
 
-    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+    <h2
+      class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6 hover:text-red-700 hover:scale-105 duration-300 cursor-default"
+    >
       Conheça nosso cardápio
     </h2>
 
@@ -68,10 +86,13 @@
           />
 
           <div>
-            <p class="font-bold">Hamburguer Smash</p>
+            <p class="font-bold hover:text-red-600 cursor-default">
+              Hamburguer Smash
+            </p>
             <p class="text-sm">
-              Pão levinho de fermentação natural da Trigou, burguer 160g, queijo
-              prato e maionese da casa
+              Pão cervejinha, alface, tomate, cebola roxa, hamburguer misto com
+              bacon de 110g e queijo cheddar + batata frita 125g. Hamburguer
+              Misto Com Bacon Fica Rosado No Meio, Por Causa Do Bacon E Não Cru.
             </p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
@@ -98,10 +119,13 @@
           />
 
           <div>
-            <p class="font-bold">Hamburguer Duplo</p>
+            <p class="font-bold hover:text-red-600 cursor-default">
+              Hamburguer Duplo
+            </p>
             <p class="text-sm">
-              Pão levinho de fermentação natural da Trigou, burguer 160g, queijo
-              prato e maionese da casa
+              Pão cervejinha, maionese de pesto, alface americana, 2x hambúrguer
+              artesanal misto com bacon, queijo gorgonzola e cebola caramelizada
+              em redução de vinho Cabernet sauvignon
             </p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
@@ -128,10 +152,14 @@
           />
 
           <div>
-            <p class="font-bold">Hamburguer Salad</p>
+            <p class="font-bold hover:text-red-600 cursor-default">
+              Hamburguer Salad
+            </p>
             <p class="text-sm">
-              Pão levinho de fermentação natural da Trigou, burguer 160g, queijo
-              prato e maionese da casa
+              1 major salada, pão cervejinha, alface, tomate, cebola roxa,
+              hamburguer misto com bacon de 110g e queijo cheddar + batata frita
+              125g. Hamburguer Misto Com Bacon Fica Rosado No Meio, Por Causa Do
+              Bacon E Não Cru.
             </p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
@@ -158,10 +186,13 @@
           />
 
           <div>
-            <p class="font-bold">Hamburguer da casa</p>
+            <p class="font-bold hover:text-red-600 cursor-default">
+              Hamburguer da casa
+            </p>
             <p class="text-sm">
-              Pão levinho de fermentação natural da Trigou, burguer 160g, queijo
-              prato e maionese da casa
+              Pão cervejinha, maionese, alface, cebola roxa, 2 hamburguer de
+              110g cada de costela frescal, e queijo provolone empanado.
+              Acompanha batata frita 125g e 1 coca lata.
             </p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
@@ -176,11 +207,126 @@
             </div>
           </div>
         </div>
-        <!-- FIM PRODUTO ITEM4 -->
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-5.png"
+            alt="X-Frango"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold hover:text-red-600 cursor-default">X-Frango</p>
+            <p class="text-sm">
+              Pão, maionese de alho poró, alface americana, tomate, peito de
+              frango empanado em flocos de milho (muito crocante!) e cheddar
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 17.90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="X-Frango"
+                data-price="17.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-6.png"
+            alt="X-Combo"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold hover:text-red-600 cursor-default">X-Combo</p>
+            <p class="text-sm">
+              2 delicioso burguer major bacon, hamburguer 110g, pão, maionese de
+              alho poró, alface, cebola crispy, mussarela e bacon + batata frita
+              300g + 2 coca cola 350ml
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 28.90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="X-Frango"
+                data-price="28.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-7.png"
+            alt="Hamburguer Duplo"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold hover:text-red-600 cursor-default">X-Mignon</p>
+            <p class="text-sm">
+              Pão cervejinha, maionese de ervas, alface americana, tomate, 200g
+              de filé mignon (em bifes), cebola roxa na chapa, muçarela e ovo.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 24.90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="X-Cebolinha"
+                data-price="24.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-8.png"
+            alt="X-Vegetariano"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold hover:text-red-600 cursor-default">
+              X-Vegetariano
+            </p>
+            <p class="text-sm">
+              Pão, maionese de pesto, alface americana, tomate, pepino, pimenta
+              biquinho, hambúrguer de ponta de faca de mignon e muçarela de
+              búfala
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 16.90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="X-Vegetariano"
+                data-price="16.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </main>
 
       <div class="mx-auto max-w-7xl px-2 my-2">
-        <h2 class="font-bold text-3xl">Bebidas</h2>
+        <h2
+          class="font-bold text-3xl hover:text-red-700 duration-300 cursor-default"
+        >
+          Bebidas
+        </h2>
       </div>
 
       <!-- GRID BEBIDAS -->
@@ -199,7 +345,7 @@
           />
 
           <div class="w-full">
-            <p class="font-bold">Coca lata</p>
+            <p class="font-bold hover:text-red-600 cursor-default">Coca lata</p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
               <p class="font-bold text-lg">R$ 6.00</p>
@@ -225,7 +371,9 @@
           />
 
           <div class="w-full">
-            <p class="font-bold">Guanará lata</p>
+            <p class="font-bold hover:text-red-600 cursor-default">
+              Guanará lata
+            </p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
               <p class="font-bold text-lg">R$ 6.00</p>
@@ -233,6 +381,56 @@
                 class="bg-gray-900 px-5 rounded add-to-cart-btn"
                 data-name="Guanará lata"
                 data-price="6.00"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/fantalaranja.png"
+            alt="Coca lata"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold hover:text-red-600 cursor-default">
+              Fanta laranja lata
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 5.00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Fanta laranja lata"
+                data-price="5.00"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/brahma.png"
+            alt="Coca lata"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold hover:text-red-600 cursor-default">
+              Brahma lata
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 5.00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Brahma lata"
+                data-price="5.00"
               >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
@@ -284,15 +482,94 @@
 
     <!-- BUTTON CART FOOTER -->
 
+    <!-- component -->
+    <section class="py-16 w-full text-white">
+      <div class="container mx-auto px-8 ">
+        <div class="table w-full">
+          <div class="block sm:table-cell">
+            <p
+              class="uppercase text-white text-sm sm:mb-6 font-bold hover:text-red-600 cursor-pointer"
+            >
+              Links
+            </p>
+            <ul class="list-reset text-xs mb-6">
+              <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                <a href="#" class="text-white">Promoções</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                <a href="#" class="text-white">Contato</a>
+              </li>
+              <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                <a href="#" class="text-white">Sobre</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex text-center justify-center items-center gap-4">
+            <p
+              class="uppercase text-white text-sm sm:mb-6 hover:text-red-600 cursor-pointer font-bold"
+            >
+              Formas de pagamento
+            </p>
+            <ul class="list-reset text-xs mb-6 flex flex-row">
+              <li class="mt-2 mr-2 sm:block sm:mr-0">
+                <img
+                  src="./assets/mastercard.png"
+                  class="w-11 h-11"
+                  alt="mastercard"
+                />
+              </li>
+              <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                <img
+                  src="./assets/dinheiro.png"
+                  class="w-14 h-14"
+                  alt="Dinheiro"
+                />
+              </li>
+              <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                <img src="./assets/visa.png" class="w-14 h-14" alt="Visa" />
+              </li>
+            </ul>
+          </div>
+          <div class="block sm:table-cell">
+            <p
+              class="uppercase text-white text-sm sm:mb-6 hover:text-red-600 cursor-pointer font-bold"
+            >
+              Mídias sociais
+            </p>
+            <ul class="list-reset text-xs mb-6">
+              <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                <i class="fa-brands fa-instagram" style="color: #f00505;"></i>
+                <a href="#" class="text-white"
+                
+                  >Instagram</a>
+                
+              </li>
+              <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                <i class="fa-brands fa-facebook-f" style="color: #fa0505;"></i>
+                <a href="#" class="text-white">Facebook</a>
+              </li>
+
+              <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                <i class="fa-solid fa-phone" style="color:#f00505;"></i>
+                <a href="#" class="text-white">Telefone</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer
-      class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center"
+      class="w-full bg-gray-800 py-3 fixed bottom-0 z-40 flex items-center justify-center"
     >
       <button
         class="flex items-center gap-2 text-white font-bold"
         id="cart-btn"
       >
-        (<span id="cart-count">0</span>) Veja meu carrinho
-        <i class="fa fa-cart-plus text-lg text-white"></i>
+        (<span class="text-green-500" id="cart-count">0</span>) Veja meu
+        carrinho
+        <i class="fa fa-cart-plus text-lg text-white hover:text-red-700"></i>
       </button>
     </footer>
 
