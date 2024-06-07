@@ -691,10 +691,6 @@ video {
   z-index: 99;
 }
 
-.col-auto {
-  grid-column: auto;
-}
-
 .float-start {
   float: inline-start;
 }
@@ -794,8 +790,8 @@ video {
   margin-top: 2.25rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.ml-10 {
+  margin-left: 2.5rem;
 }
 
 .box-border {
@@ -897,6 +893,10 @@ video {
   display: none;
 }
 
+.h-11 {
+  height: 2.75rem;
+}
+
 .h-14 {
   height: 3.5rem;
 }
@@ -917,24 +917,8 @@ video {
   height: 100%;
 }
 
-.h-auto {
-  height: auto;
-}
-
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-11 {
-  height: 2.75rem;
+.w-11 {
+  width: 2.75rem;
 }
 
 .w-14 {
@@ -965,32 +949,12 @@ video {
   width: 100%;
 }
 
-.w-auto {
-  width: auto;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-11 {
-  width: 2.75rem;
-}
-
 .min-w-\[90\%\] {
   min-width: 90%;
 }
 
 .max-w-7xl {
   max-width: 80rem;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .flex-shrink {
@@ -1527,20 +1491,12 @@ video {
   gap: 0.5rem;
 }
 
-.gap-7 {
-  gap: 1.75rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
-}
-
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2203,64 +2159,14 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
-.pl-5 {
-  padding-left: 1.25rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pl-9 {
-  padding-left: 2.25rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pl-1 {
-  padding-left: 0.25rem;
-}
-
-.pr-1 {
-  padding-right: 0.25rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
-}
-
-.pr-5 {
-  padding-right: 1.25rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
-.pl-64 {
-  padding-left: 16rem;
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .text-left {
@@ -2349,11 +2255,6 @@ video {
   line-height: 1rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -2428,6 +2329,14 @@ video {
 .stacked-fractions {
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+}
+
+.tracking-\[\] {
+  letter-spacing: ;
+}
+
+.tracking-\[1px\] {
+  letter-spacing: 1px;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
@@ -2828,6 +2737,16 @@ video {
 
 .content-\[\'this-is-also-valid\]-weirdly-enough\'\] {
   --tw-content: 'this-is-also-valid]-weirdly-enough';
+  content: var(--tw-content);
+}
+
+.content-\[\] {
+  --tw-content: ;
+  content: var(--tw-content);
+}
+
+.content-\[\'\'\] {
+  --tw-content: '';
   content: var(--tw-content);
 }
 
